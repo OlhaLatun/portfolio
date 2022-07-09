@@ -1,3 +1,43 @@
+:root {
+  --main-color: #bf7506;
+}
+
 body {
   font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.hero-section {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 24px;
+}
+
+.text-highlighted {
+  color: var(--main-color);
+}
+
+.link-cv {
+  display: inline;
+  padding: 5px;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.link-cv a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
