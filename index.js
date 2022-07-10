@@ -4,7 +4,8 @@ const experienceContainer = document.querySelector(".experience");
 
 function renderProjects() {
   if (location.pathname === "/portfolio.html") renderPortfolio();
-  if (location.pathname === "/index.html") renderHomepage();
+  if (location.pathname === "/index.html" || location.pathname === "/")
+    renderHomepage();
   if (location.pathname === "/about.html") renderExperience();
 }
 
