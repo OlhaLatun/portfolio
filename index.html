@@ -24,15 +24,17 @@
       crossorigin="anonymous"
     ></script>
     <title>Olha Latun | Frontend Developer</title>
+    <meta name="description" content="Welcome to my website. Let's get to know each other.">
   </head>
   <body>
-    <div class="container mt-3">
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex flex-lg-row-reverse" id="navbarNav">
+
+  <nav class="navbar navbar-expand-lg">
+   <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="col-md-8"></div>
+     <div class="col-md-4 collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
@@ -48,10 +50,10 @@
         </li>
       </ul>
     </div>
-  </div>
-</nav>
+   </div>
+  </nav>
 
-    <div class="hero-section">
+  <div class="container-fluid hero-section">
       <h1>I'm Olha Latun</h1>
       <p class="hero-description">
         <span class="text-highlighted">Frontend Developer from Ukraine.</span> I build
@@ -67,12 +69,18 @@
             </div>
         </div>
       </p>
-    </div>
-    <div class="latest-projects">
+  </div>
+
+  <div class="ccontainer-fluid latest-projects mt-5 mt-lg-2">
     <h2>Latest Projects</h2>
-    <div class="project-container"></div>
-    </div>
-    <script src="./data.js"></script>
-    <script src="./index.js"></script>
+    <div class="project-container row justify-content-center"></div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Source code for this website – <a class="text-warning" href="https://github.com/OlhaLatun/portfolio">Github</a> </p>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./index.js"></script>
   </body>
 </html>

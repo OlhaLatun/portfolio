@@ -234,29 +234,9 @@ h3,
     font-size: 16px;
   }
 
-  .latest-projects {
-    margin-top: 50px;
-  }
-
-  .project-card {
-    margin-top: 20px;
-  }
-
-  .latest-projects .tech-container {
-    display: none;
-  }
-
   .project-card .project-links a {
     padding: 5px;
     margin-right: 10px;
-  }
-
-  .portfolio-project-card {
-    text-align: center;
-  }
-
-  .portfolio-project-card .description {
-    display: none;
   }
 
   .portfolio-project-card .tech-container {

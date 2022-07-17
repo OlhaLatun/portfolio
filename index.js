@@ -13,12 +13,12 @@ function renderHomepage() {
   projects.slice(0, 2).forEach((project) => {
     latestProjectsContainer.insertAdjacentHTML(
       "beforeend",
-      `<div class="project-card m-lg-3">
+      `<div class="project-card text-lg-start text-center col-lg-4 mb-5 m-lg-3">
         <img class="img-fluid rounded" src="${project.img}" alt="${
         project.title
       }" width="300px" />
         <h3>${project.title}</h3>
-          <div class="tech-container">
+          <div class="tech-container d-none d-lg-block">
           ${project.tech.map((item) => `<span>${item}</span>`).join("")}</div>
           <div class="description">${project.description}</div>
           <div class="project-links">
@@ -38,7 +38,7 @@ function renderPortfolio() {
   projects.forEach((project) => {
     projectPlaceholder.insertAdjacentHTML(
       "beforeend",
-      `<div class="row mb-5 portfolio-project-card">
+      `<div class="row mb-5 portfolio-project-card text-center text-lg-start">
     <div class="text-end col-md-4">
         <img class='bg-custom p-lg-2 img-fluid rounded' src="${
           project.img
@@ -48,7 +48,9 @@ function renderPortfolio() {
         <h3>${project.title}</h3>
           <div class="tech-container">
           ${project.tech.map((item) => `<span>${item}</span>`).join("")}</div>
-          <div class="description">${project.description}</div>
+          <div class="description d-none d-lg-block">${
+            project.description
+          }</div>
           <div class="project-links">
             <a href="${
               project.code
